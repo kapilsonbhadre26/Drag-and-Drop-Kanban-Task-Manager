@@ -46,6 +46,7 @@ const TaskCard = ({ task }) => {
   const style = transform
     ? {
         transform: `translate3d(${transform.x}px, ${transform.y}px, 0)`,
+        opacity: 0.2,
       }
     : undefined;
   return (
@@ -53,10 +54,10 @@ const TaskCard = ({ task }) => {
       ref={setNodeRef}
       style={{
         ...style,
-        zIndex: 1000,
+        // zIndex: 990,
         // position: "relative",
       }}
-      className="group relative rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md dark:bg-zinc-800 dark:border-zinc-700"
+      className="group  relative rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md dark:bg-zinc-800 dark:border-zinc-700"
     >
       <div className="mb-3 flex items-start justify-between gap-3">
         <div>
